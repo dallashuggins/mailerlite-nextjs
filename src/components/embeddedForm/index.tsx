@@ -14,7 +14,7 @@ export function EmbeddedForm() {
     const firstName = formData.get("firstName");
     const lastName = formData.get("lastName");
     const email = formData.get("email");
-    const response = await fetch("/api/mc/subscribeUser", {
+    const response = await fetch("/api/ml/subscribeUser", {
       body: JSON.stringify({
         email,
         firstName,
