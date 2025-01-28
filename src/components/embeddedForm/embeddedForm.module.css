@@ -1,0 +1,33 @@
+.form {
+  @apply pl-5 text-center py-9;
+}
+
+.header {
+  @apply mb-4 text-xl text-start;
+}
+
+.inputWrapper {
+  @apply flex flex-col items-start;
+}
+
+.button {
+  @apply block px-3 py-2 mt-5 text-base font-medium text-black rounded-md bg-white;
+}
+
+.inputAndLabel {
+  @apply block rounded-md;
+}
+
+.inputFieldLabel {
+  @apply block my-2 font-semibold text-left;
+}
+
+.inputField {
+  @apply block text-black;
+  @apply block min-w-96 rounded-md py-1.5 pl-1 pr-3;
+  @apply focus:outline focus:outline-2 focus:outline-offset-1;
+}
+
+.errorMessage {
+  @apply w-1/2 p-5 m-auto font-bold border border-white border-solid;
+}
