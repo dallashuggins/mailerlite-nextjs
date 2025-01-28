@@ -29,6 +29,24 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Mailerlite Integration
+
+The EmbeddedForm and CircularLoader components have been added to this application to consume the api/ml/subscribeUser endpoint. This endpoint creates a subscribed list member in Mailerlite.
+
+In order to try out the form, add environment variables for your account to a .env file. You can copy the .env-example file for the specific variable names, or see the descriptions below.
+
+You’ll also need to set up MAILERLITE_API_KEY and MAILERLITE_NEWSLETTER_GROUP in your Next config file and add the values to your .env file.
+
+### Environment Variables
+
+1. `MAILERLITE_API_KEY`: Mailerlite API key
+
+Instructions to retrieve the Mailerlite API key [are available here](https://www.mailerlite.com/help/where-to-find-the-mailerlite-api-key-groupid-and-documentation).
+
+2. `MAILERLITE_NEWSLETTER_GROUP`: Mailchimp newsletter group ID
+
+Instructions to retrieve the Mailerlite group ID [are available here](https://www.mailerlite.com/help/where-to-find-the-mailerlite-api-key-groupid-and-documentation).
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
